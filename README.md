@@ -27,7 +27,7 @@
 
 From the root of your Hugo site, clone the theme into `themes/hugo-sustain` by running :
 ```
-git clone https://github.com/nurlansu/hugo-sustain.git themes/hugo-sustain
+git clone https://github.com/jbsilva/hugo-sustain.git themes/hugo-sustain
 ```
 
 #### Manual
@@ -125,7 +125,7 @@ Pull requests, bug fixes, and new features are welcome!
 [bootstrap]: https://getbootstrap.com/
 [hugo]: https://gohugo.io/
 [gh-pages]: https://pages.github.com/
-[zip-archive]: https://github.com/nurlansu/hugo-sustain/archive/master.zip
+[zip-archive]: https://github.com/jbsilva/hugo-sustain/archive/master.zip
 [hugo-guide]: https://gohugo.io/overview/installing/
 [local]: http://localhost:1313/
 [highlight-js]: https://highlightjs.org/
