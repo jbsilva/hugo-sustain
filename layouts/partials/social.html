@@ -19,5 +19,9 @@
     {{ if .Site.Params.Social.Stackoverflow }}
       <li><a href="https://stackoverflow.com/users/{{ .Site.Params.Social.Stackoverflow }}"><i class="fa fa-stack-overflow"></i></a></li>
     {{ end }}
+
+    {{ if .Site.Params.Social.facebook }}
+        <li><a href="https://facebook.com/{{ .Site.Params.Social.facebook }}"><i class="fa fa-facebook"></i></a></li>
+    {{ end }}
   </ul>
 </div>
