@@ -4,8 +4,10 @@
 
       <!-- Header -->
       {{ partial "header" . }}
-      {{ if isset .Params "showpagemeta" }}
+      {{ if isset .Params "projectspage" }}
         {{ .Render "projects" }}
+      {{ else if isset .Params "resumepage" }}
+        {{ .Render "resume" }}
       {{ else }}
       <div class="container">
         <div class="blog-post">

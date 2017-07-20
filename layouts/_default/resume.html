@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/resume.css">
+<section id="resume">
+    <div class="container">
+      <div class="thirteen columns clearfix">
+        {{ partial "employment" . }}
+        {{ partial "education" . }}
+        {{ partial "skills" . }}
+        {{ partial "initiatives" . }}
+        {{ partial "hobbies" . }}
+      </div>
+    </div>
+</section>
