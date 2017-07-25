@@ -8,6 +8,8 @@
         {{ .Render "projects" }}
       {{ else if isset .Params "resumepage" }}
         {{ .Render "resume" }}
+      {{ else if isset .Params "publickeypage" }}
+        {{ .Render "pubkey" }}
       {{ else }}
         {{ .Render "blog_post" }}
       {{ end }}

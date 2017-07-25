@@ -1,0 +1,14 @@
+<section id="pubkey">
+  <div class="container">
+    <h3>Public Key</h3>
+    <h4>Use the following public key to send me private messages:</h4>
+    <p><a href="/julio-pubkey.asc">Download key</a></p>
+    <div class="panel panel-default">
+      <div class="panel-body">
+          <pre>{{ readFile "/static/julio-pubkey.asc" }}</pre>
+      </div>
+      <p><strong>Fingerprint</strong>: {{ .Site.Data.pubkey.fp32 }}</p>
+      <p><strong>64-bit</strong>: {{ .Site.Data.pubkey.fp64 }}</p>
+    </div>
+  </div>
+</section>
