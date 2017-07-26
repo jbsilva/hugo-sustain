@@ -1,0 +1,33 @@
+{{ partial "head" . }}
+  <body>
+    <div id="wrap">
+      <!-- Header -->
+      {{ partial "header" . }}
+      <div class="container">
+        <h3>Albums</h3>
+          <div class="panel panel-default">
+            <div class="panel-body">
+
+            {{ range .Data.Pages.ByPublishDate }}
+              <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                <a href="{{ .RelPermalink }}">
+                  <h1 id="title">{{ .Title | markdownify }}</h1>
+                  <img alt="{{ .Title | markdownify }}" src="{{ .Params.cover }}">
+                </a>
+                </div>
+              </div>
+            {{ end }}
+
+            {{ range .Data.Pages }}
+            {{ end }}
+
+
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    {{ partial "footer" . }}
+  </body>
+</html>
