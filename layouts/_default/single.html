@@ -10,7 +10,7 @@
         {{ .Render "resume" }}
       {{ else if isset .Params "publickeypage" }}
         {{ .Render "pubkey" }}
-      {{ else if isset .Params "photospage" }}
+      {{ else if isset .Params "cover" }}
         {{ .Render "photos" }}
       {{ else }}
         {{ .Render "blog_post" }}
