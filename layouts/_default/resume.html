@@ -2,6 +2,10 @@
 <section id="resume">
     <div class="container">
       <div class="thirteen columns clearfix">
+        <h2>Download CV in PDF</h2>
+        {{ range $el := .Site.Data.cv.source }}
+          <h4><a href="{{ .url }}">{{ $el.description }}</a></h4>
+        {{ end }}
         {{ partial "employment" . }}
         {{ partial "education" . }}
         {{ partial "skills" . }}
