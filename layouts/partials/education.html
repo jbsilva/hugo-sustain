@@ -11,7 +11,11 @@
       </span>
     </header>
     <p>
-        <em>{{ if .type }}{{ .type }}:{{ end }} <a href="{{ .tcc_url }}">{{ .description }}</a></em>
+    {{- if .tcc_url -}}
+        <em>{{ .type }}: <a href="{{ .tcc_url }}">{{ .description }}</a></em>
+    {{- else -}}
+        <em>{{ if .type }}{{ .type }}:{{ end }} {{ .description }}</em>
+    {{- end -}}
     </p>
   </article>
   {{ end }}
