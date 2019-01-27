@@ -31,5 +31,9 @@
     {{ if .Site.Params.Social.facebook }}
         <li><a href="https://facebook.com/{{ .Site.Params.Social.facebook }}"><i class="fa fa-facebook"></i></a></li>
     {{ end }}
+
+    {{ if .Site.Params.Social.Keybase }}
+      <li><a href="https://keybase.io/{{ .Site.Params.Social.Keybase }}"><i class="fa fa-key"></i></a></li>
+    {{ end }}
   </ul>
 </div>
