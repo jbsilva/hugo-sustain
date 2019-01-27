@@ -4,12 +4,15 @@
     <div class="panel panel-default">
       <div class="panel-body">
       {{ range $el := .Site.Data.projects.source }}
-        <h5>
-          <i class="{{ .icon }}"></i>&nbsp;&nbsp;
-          <strong><a href="{{ .url }}">{{ $el.name }}</a></strong>&nbsp;-&nbsp;{{ $el.description }}
-        </h5>
+        {{ if $el.published }}
+          <h5>
+            <i class="{{ .icon }}"></i>&nbsp;&nbsp;
+            <strong><a href="{{ .url }}">{{ $el.name }}</a></strong>&nbsp;-&nbsp;{{ $el.description }}
+          </h5>
+        {{ end }}
       {{ end }}
       </div>
     </div>
   </div>
 </section>
+
