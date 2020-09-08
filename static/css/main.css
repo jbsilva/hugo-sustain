@@ -201,3 +201,19 @@ div.footer{
   padding-bottom: 15px;
   
 }*/
+
+/* Gallery */
+.gallery {
+  width: 100%;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+.gallery figure {
+  display: inline-block;
+  margin: 0 5px 5px 0;
+}
+.gallery figcaption {
+  display: none;
+}
