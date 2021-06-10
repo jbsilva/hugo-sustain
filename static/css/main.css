@@ -217,3 +217,8 @@ div.footer{
 .gallery figcaption {
   display: none;
 }
+
+/* Code */
+pre code {
+	white-space: pre;
+}
